@@ -55,7 +55,7 @@
   .apparel-item-header .item-name { font-size: 14px; color: #1a1a1a; flex: 1; }
   .size-lines { display: flex; flex-direction: column; gap: 8px; margin-left: 68px; }
   .size-line { display: flex; gap: 8px; align-items: center; }
-  .size-select { flex: 0 0 auto; width: 130px; padding: 7px 8px; border: 0.5px solid #d0d0d0; border-radius: 6px; font-size: 13px; background: #fafafa; color: #1a1a1a; outline: none; }
+  .size-select { flex: 0 0 auto; width: 150px; padding: 7px 8px; border: 0.5px solid #d0d0d0; border-radius: 6px; font-size: 13px; background: #fafafa; color: #1a1a1a; outline: none; }
   .size-select:focus { border-color: #1a3a5c; background: #fff; }
   .size-qty { width: 64px; padding: 4px 8px; font-size: 13px; text-align: center; border: 0.5px solid #d0d0d0; border-radius: 6px; background: #fafafa; color: #1a1a1a; }
   .size-qty:focus { outline: none; border-color: #1a3a5c; }
@@ -100,6 +100,7 @@
       <div class="phase-tab" onclick="switchPhase(1)"><span class="num">Form 002</span><span class="sub">90-day expansion</span></div>
       <div class="phase-tab" onclick="switchPhase(2)"><span class="num">Form 003</span><span class="sub">180-day marketing</span></div>
     </div>
+    <!-- Size dropdowns are filled in by script (see SIZE_OPTIONS_HTML) so the size list lives in one place. -->
     <!-- Phase 1 -->
     <div class="phase-section active" id="phase-0">
       <div class="card">
@@ -113,7 +114,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -129,7 +130,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -145,7 +146,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -161,7 +162,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -177,7 +178,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -209,7 +210,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -225,7 +226,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -241,7 +242,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -257,7 +258,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -273,7 +274,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -324,7 +325,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -338,7 +339,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -352,7 +353,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -366,7 +367,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -380,7 +381,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -394,7 +395,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -408,7 +409,7 @@
           </div>
           <div class="size-lines">
             <div class="size-line">
-              <select class="size-select"><option value="">Size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option></select>
+              <select class="size-select"></select>
               <input class="size-qty" type="number" min="0" placeholder="Qty" />
               <button type="button" class="remove-line-btn" onclick="removeSizeLine(this)">×</button>
             </div>
@@ -441,6 +442,21 @@
     'Form 002 – 90-Day Expansion',
     'Form 003 – 180-Day Marketing'
   ];
+
+  // ---- Size list: edit here, applies to every apparel dropdown ----
+  // Men's/Unisex values stay plain ("M") so existing sheet rows keep the same format.
+  // Women's values are prefixed ("Women's M") and flow through to the sheet as-is.
+  const SIZES = ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL'];
+  const SIZE_OPTIONS_HTML =
+    '<option value="">Size</option>' +
+    '<optgroup label="Men\'s / Unisex">' +
+      SIZES.map(s => '<option value="' + s + '">' + s + '</option>').join('') +
+    '</optgroup>' +
+    '<optgroup label="Women\'s">' +
+      SIZES.map(s => '<option value="Women\'s ' + s + '">Women\'s ' + s + '</option>').join('') +
+    '</optgroup>';
+  document.querySelectorAll('.size-select').forEach(sel => { sel.innerHTML = SIZE_OPTIONS_HTML; });
+
   let currentPhase = 0;
   function switchPhase(idx) {
     document.querySelectorAll('.phase-tab').forEach((t, i) => t.classList.toggle('active', i === idx));
